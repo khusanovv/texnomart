@@ -1,0 +1,35 @@
+.download {
+  max-width: 1440px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 1px 3px 7px #0000003b;
+  color: #333333;
+}
+.download-scan {
+  margin-top: 30px;
+  font-family: Roboto, sans-serif;
+}
+.download-scan h2 {
+  font-size: 36px;
+}
+.download-scan .scan__info {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 420px;
+}
+.scan_wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.scan_wrapper p {
+  max-width: 180px;
+  font-size: 16px;
+  line-height: 26px;
+}

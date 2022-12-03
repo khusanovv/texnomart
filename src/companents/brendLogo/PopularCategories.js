@@ -17,9 +17,6 @@ export default function PopolarCategories() {
         slidesPerGroup={3}
         loop={true}
         loopFillGroupWithBlank={true}
-        pagination={{
-          clickable: true,
-        }}
         navigation={true}
         modules={[Pagination, Navigation]}
         className="categories"
