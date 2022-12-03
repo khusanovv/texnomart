@@ -19,7 +19,7 @@
   padding: 0 14px;
 }
 .payment__cart .cart-item {
-  max-width: 284px;
+  width: 284px;
   text-align: center;
 }
 .cart-item .item-img__wrapper {
@@ -35,7 +35,8 @@
 .cart-item h4 {
   margin-bottom: 5px;
   font-size: 16px;
-  color: #333333;
+  font-weight: 600;
+  color: #333333eb;
 }
 .cart-item p {
   font-size: 14px;
