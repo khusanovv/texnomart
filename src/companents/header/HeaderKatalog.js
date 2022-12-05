@@ -20,7 +20,7 @@ const HeaderKatalog = () => {
   const [fix, setFix] = useState(false);
 
   function setFixed() {
-    if (window.scrollY >= 190) {
+    if (window.scrollY >= 210) {
       setFix(true);
     } else {
       setFix(false);
@@ -89,6 +89,7 @@ const HeaderKatalog = () => {
           <li className="list__link">TELEVIZORLAR</li>
           <li className="list__link">BARCHA KATEGORIYALAR</li>
         </ul>
+
         <Modal open={open} onClose={handleClose} className="katalog__modal">
           <Box className="modal-wrapper" sx={style}>
             <div className="modal-links">

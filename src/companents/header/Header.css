@@ -125,12 +125,12 @@ body {
   background: #f7f7f7;
   /* position: fixed; */
   z-index: 454;
-  transition: 1s;
+  transition: all top 1s;
 }
 .header-katalog.fixed {
   position: fixed;
   top: 0;
-  transition: 1s;
+  transition: top 1s;
   background-color: #fff;
   border-bottom: 1px solid #00000032;
 }
