@@ -123,6 +123,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background: #f7f7f7;
+  position: relative;
 }
 .header-katalog .katalog-btn {
   padding: 10px 16px;
@@ -134,7 +135,16 @@ body {
   height: 44px;
   width: 125px;
   font-weight: 700;
+  color: #000;
 }
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root:hover {
+  background-color: #fbc100 !important;
+}
+.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
 .header-katalog .katalog-btn span {
   padding-right: 14px;
 }
@@ -170,4 +180,23 @@ body {
   color: #333333;
   font-weight: 500;
   cursor: pointer;
+}
+
+/* Modal */
+
+.katalog__modal {
+  width: 100%;
+  height: 531px;
+  background-color: #fff;
+  /* margin-top: 184px; */
+  transition: 0.5s;
+  position: absolute;
+}
+
+.modal-wrapper {
+  width: 96% !important;
+  height: 100% !important;
+  display: grid;
+  grid-template-columns: 30% 60%;
+  transition: 0.5s;
 }
