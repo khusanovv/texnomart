@@ -4,6 +4,7 @@ import { BsFillLightningFill } from "react-icons/bs";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
+import { useState } from "react";
 
 const style = {
   position: "absolute",
@@ -16,13 +17,24 @@ const style = {
 };
 
 const HeaderKatalog = () => {
+  const [fix, setFix] = useState(false);
+
+  function setFixed() {
+    if (window.scrollY >= 190) {
+      setFix(true);
+    } else {
+      setFix(false);
+    }
+  }
+
+  window.addEventListener("scroll", setFixed);
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   return (
     <>
-      <div className="header-katalog">
+      <div className={fix ? "header-katalog fixed" : "header-katalog"}>
         <Button className="katalog-btn" onClick={handleOpen}>
           <span>
             <svg

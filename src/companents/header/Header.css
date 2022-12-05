@@ -123,7 +123,16 @@ body {
   align-items: center;
   justify-content: space-between;
   background: #f7f7f7;
-  position: relative;
+  /* position: fixed; */
+  z-index: 454;
+  transition: 1s;
+}
+.header-katalog.fixed {
+  position: fixed;
+  top: 0;
+  transition: 1s;
+  background-color: #fff;
+  border-bottom: 1px solid #00000032;
 }
 .header-katalog .katalog-btn {
   padding: 10px 16px;
@@ -190,7 +199,6 @@ body {
   background-color: #fff;
   /* margin-top: 184px; */
   transition: 0.5s;
-  position: absolute;
 }
 
 .modal-wrapper {
