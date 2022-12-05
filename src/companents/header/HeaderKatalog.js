@@ -1,20 +1,6 @@
 import React from "react";
 import { BsFillLightningFill } from "react-icons/bs";
-// import * as React from 'react';
-import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
-import Modal from "@mui/material/Modal";
 import { useState } from "react";
-
-const style = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: 400,
-  bgcolor: "background.paper",
-  p: 4,
-};
 
 const HeaderKatalog = () => {
   const [fix, setFix] = useState(false);
@@ -28,14 +14,11 @@ const HeaderKatalog = () => {
   }
 
   window.addEventListener("scroll", setFixed);
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
 
   return (
     <>
       <div className={fix ? "header-katalog fixed" : "header-katalog"}>
-        <Button className="katalog-btn" onClick={handleOpen}>
+        <button className="katalog-btn">
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +54,7 @@ const HeaderKatalog = () => {
             </svg>
           </span>
           Katalog
-        </Button>
+        </button>
 
         <ul className="katalog-list">
           <button className="katalog-week">
@@ -89,19 +72,6 @@ const HeaderKatalog = () => {
           <li className="list__link">TELEVIZORLAR</li>
           <li className="list__link">BARCHA KATEGORIYALAR</li>
         </ul>
-
-        <Modal open={open} onClose={handleClose} className="katalog__modal">
-          <Box className="modal-wrapper" sx={style}>
-            <div className="modal-links">
-              <ul>
-                <li>Maishiy Texnika</li>
-              </ul>
-            </div>
-            <div className="links__item">
-              <h3>Maishiy texnika</h3>
-            </div>
-          </Box>
-        </Modal>
       </div>
     </>
   );
