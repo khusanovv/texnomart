@@ -14,18 +14,18 @@ import{useState, useEffect} from 'react'
 
 
 function App() {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
   useEffect(() =>{
     setLoading(true)
-    // setTimeout(()=>{
-    //   setLoading(false)
-    // },2000)
-
-    window.onload = function(){
+    setTimeout(()=>{
       setLoading(false)
-      // console.log("hello");
+    },2000)
 
-    }
+    // window.onload = function(){
+    //   setLoading(false)
+    //   console.log("hello");
+
+    // }
     
   },[])
   return (

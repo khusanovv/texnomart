@@ -1,13 +1,24 @@
 export const FooterData = [
 	{
-        contact: [
+		entries: [
             {
                 title: "Savolingiz bormi? Qo'ng'iroq qiling",
                 links: [
                     {
                         phone: "+998 71 209 99 44",
+                    },
+                    {
+                        fasebook: "T", 
+                        telegram: "T",
+                        instagram: "I",
+                        youtube: "Y"
+                    },
+                    {
+                        img: "https://texnomart.uz/_nuxt/img/playmarket-logo-uz.793161d.svg"
                     }
-                    
+                    ,{
+                        lok: "Do`konlar manzillari Toshkent"
+                    }
                 ],
                 social: [
                     {
@@ -35,62 +46,42 @@ export const FooterData = [
                         lok: "Do`konlar manzillari Toshkent"
                     }
                 ]
-            }
-
-        ],
-		entries: [
+            },
 			{
 				title: "Kompaniya",
 				links: [
                     {
-                        title: "Careers",
+                        title: "B2B savdosi",
                     },
                     {
-                        title: "Blog",
+                        title: "Biz haqimizda",
                     },
                     {
-                        title: "About Amazon",
+                        title: "Yangiliklar va sharhlar",
                     },
                     {
-                        title: "Investor Relations",
+                        title: "IMEI ni tekshirish",
                     },
-					{
-						title: "Amazon Devices",
-
-					},
-                    {
-						title: "Amazon Science",
-
-					},
 				],
 			},
 			{
 				title: "Malumot",
                 links:[
                     {
-                        title : "Sell products on Amazon"
+                        title : "Bepul yetkazib berish"
                     },
                     {
-                        title: "Sell on Amazon Business"
+                        title: "Bonus tizimi"
                     },
                     {
-                        title: "Sell apps on Amazon"
+                        title: "Texnomartda ishlash"
                     },
                     {
-                        title: "Become an Affiliate"
+                        title: "Shaxsiy kabinet"
                     },
                     {
-                        title: "Advertise Your Products"
+                        title: "Aloqa raqamlari"
                     },
-                    {
-                        title: "Self-Publish with Us"
-                    },
-                    {
-                        title: "Host an Amazon Hub"
-                    },
-                    {
-                        title: "See More Make Money with Us"
-                    }
 
                     
                 ]
@@ -101,16 +92,16 @@ export const FooterData = [
 				title: "Haridorga yordam",
                 links:[
                     {
-                        title : "Amazon Business Card"
+                        title : "Muddatli to'lovga sotib olish"
                     },
                     {
-                        title: "Shop with Points"
+                        title: "Maxsulotni qaytarish"
                     },
                     {
-                        title: "Reload Your Balance"
+                        title: "Mahsulotlar uchun kafolat"
                     },
                     {
-                        title: "Amazon Currency Converter"
+                        title: "Ko'p so'raladigan savollar"
                     }
                     
                 ]
