@@ -9,6 +9,7 @@ import TermPayment from './companents/TermPayment/TermPayment';
 // import { InfinitySpin  } from  'react-loader-spinner'
 import PacmanLoader from "react-spinners/PacmanLoader";
 import{useState, useEffect} from 'react'
+import Products from './companents/products/Product';
 // import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 
@@ -46,6 +47,7 @@ function App() {
       <Download />
       <TermPayment />
       <Footer />
+      <Products />
       </>
     }
       
