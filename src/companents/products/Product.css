@@ -1,20 +1,21 @@
-.product-cart {
+.product-cartt {
   color: black;
   font-size: 14px;
-  width: 300px;
+  width: 220px;
   background-color: #fff;
   padding: 10px;
   transition: all 1s;
 }
-.cart-wrapper {
+.product-cart {
   background-color: #fff;
-  width: 300px;
+  width: 220px !important;
+  height: 356px;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 1px 3px 7px #00000076;
   transition: all 0.4s ease-in;
 }
-.cart-wrapper:hover {
+.product-cart:hover {
   transform: scale(1.05);
 }
 .nimadir {
@@ -25,17 +26,20 @@
   font-size: 16px;
   margin: 20px 0;
 }
-.img {
-  max-width: 300px;
+.cart__img {
+  max-width: 220px !important;
+  height: 250px;
+  object-fit: contain;
+  padding: 10px;
 }
-.cartt {
+.product {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 50px;
   gap: 30px;
 }
-.cartt__img {
+.product__img {
   width: 250px;
 }
 
