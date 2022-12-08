@@ -301,7 +301,7 @@ body {
 .header-login {
   width: 100vw;
   height: 100vh;
-  background-color: #00000040;
+  background-color: #00000086;
   z-index: 6;
   position: fixed;
   display: flex;
@@ -316,7 +316,7 @@ body {
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 1px 3px 7px #0000007f;
-  z-index: 5;
+  z-index: 9999999;
 }
 .css-heg063-MuiTabs-flexContaine,
 .css-lx4kgr {

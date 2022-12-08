@@ -152,7 +152,11 @@ const HeaderSearch = () => {
                   {" "}
                   Telefon <span>*</span>
                 </label>
-                <input className="login__phone" type="number" />
+                <input
+                  className="login__phone"
+                  defaultValue="+998"
+                  type="number"
+                />
                 <button className="login__button" type="button">
                   Telefon orqali kirish
                 </button>
@@ -181,7 +185,7 @@ const HeaderSearch = () => {
             </div>
             {fabs.map((fab, index) => (
               <Zoom
-                key={fab.color}
+                key={uuidv4()}
                 in={value === index}
                 timeout={transitionDuration}
                 style={{

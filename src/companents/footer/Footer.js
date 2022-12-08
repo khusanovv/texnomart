@@ -2,11 +2,10 @@ import React from "react";
 import "./Footer.css";
 import { FooterData } from "./FooterData";
 // import FooterLogo from "./logo.png";
-import { v4 as uuidv4, v4 } from "uuid";
+import { v4 as uuidv4 } from "uuid";
 import { FiFacebook } from 'react-icons/fi';
 
 const Footer = () => {
-  uuidv4();
   return (
     <>
       <div className="footer">
@@ -15,17 +14,17 @@ const Footer = () => {
           {FooterData.map((item, index) => {
             return (
             
-              <div className="link__list">
+              <div key={uuidv4()} className="link__list">
                 
                 {item.entries.map((t, index) => {
                   // console.log(t);
                   return (
-                    <ul key={v4}>
+                    <ul key={uuidv4()}>
                       <h3 className="list__title">{t.title}</h3>
                       {t.links.map((itm, index) => {
                         return (
-                         <>
-                          <li  className="list__link">
+                         <div key={uuidv4()}>
+                          <li   className="list__link">
                             {itm.title}
                           </li>
                           <div>
@@ -45,7 +44,7 @@ const Footer = () => {
                                 {itm.lok}
                             </p>
                           </div>
-                         </>
+                         </div>
                         );
                       })}
                     </ul>

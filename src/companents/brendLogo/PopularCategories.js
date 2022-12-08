@@ -8,8 +8,7 @@ import { Pagination, Navigation } from "swiper";
 
 export default function PopolarCategories() {
   return (
-    <>
-      {" "}
+    <div>
       <h4 className="categerios__title">Ommabop Kategoriyalar</h4>
       <Swiper
         slidesPerView={6}
@@ -94,6 +93,6 @@ export default function PopolarCategories() {
           </div>
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }
