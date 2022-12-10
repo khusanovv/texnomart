@@ -136,7 +136,7 @@ body {
   transition: top 1s;
   background-color: #fff;
   border-bottom: 1px solid #00000032;
-  z-index: 5454;
+  z-index: 44;
 }
 .header-katalog .katalog-btn {
   padding: 10px 16px;
@@ -335,4 +335,87 @@ body {
   font-size: 22px;
   position: absolute;
   right: 0;
+}
+.basket {
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000086;
+  z-index: 45;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  margin-top: -60px;
+}
+
+.basket .fixed {
+  position: fixed;
+  top: 0;
+  transition: top 1s;
+  background-color: #fff;
+  border-bottom: 1px solid #00000068;
+  z-index: 5454;
+}
+
+.basket-warpper {
+  width: 800px;
+  height: 400px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.basket-warpper .title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  margin-top: 20px;
+  color: rgb(41, 40, 40);
+}
+.title h3 {
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid rgb(224, 224, 224);
+  padding: 4px 6px;
+  cursor: pointer;
+}
+.basket__carts {
+  max-width: 174px;
+  height: 300px;
+  text-align: center;
+}
+.basket__carts img {
+  margin-top: 60px;
+}
+.basket__carts p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+.basket-warpper button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.4px;
+  color: #333;
+  border: 2px solid #fbc100;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-top: 32px;
+  padding: 0 20px;
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+  background-color: #fff;
 }

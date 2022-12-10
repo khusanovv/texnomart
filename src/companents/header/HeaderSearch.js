@@ -67,6 +67,7 @@ const fabGreenStyle = {
 
 const HeaderSearch = () => {
   const [isBoxVisibile, setIsBoxVisibile] = useState(false);
+  const [isBasketVisibile, setBasketVisibile] = useState(false);
 
   // #### Show Box Login ####
   function show() {
@@ -77,6 +78,16 @@ const HeaderSearch = () => {
 
   function hideBox() {
     setIsBoxVisibile(false);
+  }
+
+  function show2() {
+    setBasketVisibile(true);
+  }
+
+  // #### hide login ####
+
+  function hideBox2() {
+    setBasketVisibile(false);
   }
 
   // #### Login box ######
@@ -115,6 +126,28 @@ const HeaderSearch = () => {
 
   return (
     <>
+      <div
+        style={
+          isBasketVisibile === true ? { display: "flex" } : { display: "none" }
+        }
+        className="basket"
+      >
+        <div className="basket-warpper">
+          <div className="title">
+            <h2>Hozir xarid qilish</h2>
+            <h3 onClick={hideBox2}>X</h3>
+          </div>
+          <div className="basket__carts">
+            <img
+              src="	https://texnomart.uz/_nuxt/img/shopping-card.b37726e.svg"
+              alt=""
+            />
+            <p>Hozircha hech narsa yoq</p>
+          </div>
+          <button>Sotib olish</button>
+        </div>
+      </div>
+
       <div
         className="header-login"
         style={
@@ -239,7 +272,7 @@ const HeaderSearch = () => {
             <BsSuitHeart /> <br />
             Sevimlilar
           </li>
-          <li className="links__item">
+          <li onClick={show2} className="links__item">
             <SlBasket />
             <br />
             Savatcha
