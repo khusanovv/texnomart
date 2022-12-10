@@ -3,7 +3,7 @@ import "./TermPayment.css";
 
 const TermPayment = () => {
   return (
-    <div className="term-payment">
+    <div className="term-payment container">
       <h2 className="payment__title">
         Telefonlar va maishiy texnika muddatli to'lovga
       </h2>

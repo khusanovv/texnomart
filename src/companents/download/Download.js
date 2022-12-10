@@ -3,7 +3,7 @@ import "./Download.css";
 
 const Download = () => {
   return (
-    <div className="download">
+    <div className="download container">
       <div className="download-img">
         <img
           src="https://texnomart.uz/_nuxt/img/phone-min.d3c6b0c.png"

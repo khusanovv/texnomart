@@ -1,8 +1,12 @@
 body {
   background: #f7f7f7;
 }
-.header-top {
+.header {
   width: 100%;
+  background-color: #333333;
+}
+.header-top {
+  max-width: 1580px;
   height: 60px;
   background-color: #333333;
   display: flex;
@@ -10,6 +14,7 @@ body {
   padding: 5px 50px;
   color: #fff;
   align-items: center;
+  margin: 0 auto;
 }
 .header-top .header-top__list {
   display: flex;
@@ -44,15 +49,20 @@ body {
 }
 
 /*    */
-
+.header-wrapper {
+  width: 100%;
+  background: #f7f7f7;
+}
 .header-search {
   background: #f7f7f7;
   display: flex;
   /* justify-content: space-between; */
-  padding: 0px 50px;
+  padding: 10px 50px;
   /* background-color: #e5e7eb; */
   align-items: center;
   margin-top: 14px;
+  max-width: 1580px;
+  margin: 0 auto;
 }
 .header-search img {
   max-width: 230px;
@@ -118,14 +128,19 @@ body {
 }
 /*    */
 
+.header-katalog--wrapper {
+  width: 100%;
+  background: #f7f7f7;
+  text-align: center;
+}
 .header-katalog {
   display: flex;
-  width: 100%;
   padding: 0px 50px;
   height: 80px;
   align-items: center;
   justify-content: space-between;
   background: #f7f7f7;
+  margin: 0 auto;
   /* position: fixed; */
   z-index: 4;
   transition: all top 1s;
@@ -137,6 +152,8 @@ body {
   background-color: #fff;
   border-bottom: 1px solid #00000032;
   z-index: 44;
+  width: 100%;
+  margin: 0 auto;
 }
 .header-katalog .katalog-btn {
   padding: 10px 16px;

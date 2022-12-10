@@ -6,7 +6,7 @@ import HeaderSearch from "./HeaderSearch";
 
 const Header = () => {
   return (
-    <div>
+    <div className="header">
       <div className="header-top">
         <ul className="header-top__list">
           <li className="list__item list__item--flex">

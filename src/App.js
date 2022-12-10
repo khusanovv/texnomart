@@ -27,7 +27,7 @@ function App() {
     };
   }, []);
   return (
-    <>
+    <div>
       {loading ? (
         <PacmanLoader
           color={"#fbc100"}
@@ -48,7 +48,7 @@ function App() {
           <Footer />
         </>
       )}
-    </>
+    </div>
   );
 }
 

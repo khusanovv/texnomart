@@ -16,7 +16,7 @@ const HeaderKatalog = () => {
   window.addEventListener("scroll", setFixed);
 
   return (
-    <>
+    <div className=" header-katalog--wrapper">
       <div className={fix ? "header-katalog fixed" : "header-katalog"}>
         <button className="katalog-btn">
           <span>
@@ -74,7 +74,7 @@ const HeaderKatalog = () => {
           <li className="list__link">BARCHA KATEGORIYALAR</li>
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -8,13 +8,12 @@ import { Pagination, Navigation } from "swiper";
 
 export default function PopolarCategories() {
   return (
-    <div>
+    <div className="container">
       <h4 className="categerios__title">Ommabop Kategoriyalar</h4>
       <Swiper
         slidesPerView={6}
         spaceBetween={30}
         slidesPerGroup={3}
-        loop={true}
         loopFillGroupWithBlank={true}
         navigation={true}
         modules={[Pagination, Navigation]}
@@ -35,7 +34,7 @@ export default function PopolarCategories() {
               src="https://backend.texnomart.uz/files/global/new-photo/img/special-slider/pilesos.svg"
               alt=""
             />
-            <p>Smartfonlar</p>
+            <p>Planshetlar</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -44,7 +43,7 @@ export default function PopolarCategories() {
               src="https://backend.texnomart.uz/files/global/new-photo/img/special-slider/planshet.svg"
               alt=""
             />
-            <p>Smartfonlar</p>
+            <p>Muzlatgichlar</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -53,7 +52,7 @@ export default function PopolarCategories() {
               src="https://backend.texnomart.uz/files/global/new-photo/img/special-slider/xolodilnik.svg"
               alt=""
             />
-            <p>Smartfonlar</p>
+            <p>Havo sovutgichlari</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -62,7 +61,7 @@ export default function PopolarCategories() {
               src="https://backend.texnomart.uz/files/global/new-photo/img/special-slider/klimaticheskaya-texnika.svg"
               alt=""
             />
-            <p>Smartfonlar</p>
+            <p>televizorlar</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -71,7 +70,7 @@ export default function PopolarCategories() {
               src="	https://backend.texnomart.uz/files/global/new-photo/img/special-slider/lg.svg"
               alt=""
             />
-            <p>Smartfonlar</p>
+            <p>Fenlar</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -80,7 +79,7 @@ export default function PopolarCategories() {
               src="https://backend.texnomart.uz/files/global/new-photo/img/special-slider/feni.svg"
               alt=""
             />
-            <p>Smartfonlar</p>
+            <p>Kir yuvish mashinalari</p>
           </div>
         </SwiperSlide>
         <SwiperSlide>
