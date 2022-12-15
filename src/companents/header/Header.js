@@ -32,6 +32,18 @@ const Header = () => {
           </select>
         </ul>
       </div>
+      <div className="header-media">
+        <ul className="media__list">
+          <li className="list__item">Toshkent</li>
+          <li className="list__item">
+            <img
+              src="https://texnomart.uz/_nuxt/img/texnomart-logo.a75bf76.svg"
+              alt=""
+            />
+          </li>
+          <li className="list__item">+99871 209 99 44</li>
+        </ul>
+      </div>
       <HeaderSearch />
       <HeaderKatalog />
     </div>

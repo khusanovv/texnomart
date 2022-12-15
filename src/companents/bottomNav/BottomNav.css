@@ -1,0 +1,22 @@
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #333333;
+  display: none;
+}
+.css-1gnz8kn-MuiBottomNavigation-root {
+  background-color: #333333 !important;
+  color: #fff;
+}
+.MuiButtonBase-root svg {
+  color: #fff;
+}
+@media screen and (max-width: 1080px) {
+  .bottom-nav {
+    display: block;
+  }
+}
+.css-imwso6-MuiBottomNavigationAction-label {
+  color: #fff !important;
+}

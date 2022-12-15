@@ -147,7 +147,6 @@ const HeaderSearch = () => {
           <button>Sotib olish</button>
         </div>
       </div>
-
       <div
         className="header-login"
         style={
@@ -284,6 +283,24 @@ const HeaderSearch = () => {
             Savatcha
           </li>
         </ul>
+      </div>
+      <div className=" header-search-media">
+        <div className="search__input">
+          <div className="input__select"></div>
+          <select>
+            <option value="">Barcha kategoriyalar</option>
+            <option value="">Maishiy texnika</option>
+            <option value="">Ofis jihozlari</option>
+            <option value="">Oshxona uchun Texnika 3</option>
+            <option value="">Uy uchun idishlar</option>
+            <option value="">Iqlim texnikasi</option>
+            <option value="">Telefon va gadjetlar</option>
+          </select>
+          <input type="text" />
+          <button>
+            <BsSearch />
+          </button>
+        </div>
       </div>
     </div>
   );
