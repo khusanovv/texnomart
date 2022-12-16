@@ -30,7 +30,7 @@
   font-weight: 500;
 }
 .categories-cart {
-  width: 220px;
+  max-width: 220px;
   height: 72px;
   background-color: #fff;
   border-radius: 10px;
